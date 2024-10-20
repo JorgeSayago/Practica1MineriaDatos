@@ -28,3 +28,7 @@ A pesar de que las estadísticas básicas son iguales, cuando se grafican los da
 
 Esto subraya que el análisis estadístico no debe limitarse a los números, y que la visualización de los datos es fundamental para detectar patrones, relaciones no evidentes y posibles errores.
 
+# Dataset DataSaurus
+
+El Datasaurus Dozen es un conjunto de datos creado en 2016 por el diseñador de información Alberto Cairo y otros, inspirado en el Cuarteto de Anscombe. Su objetivo principal es mostrar cómo conjuntos de datos pueden compartir estadísticas descriptivas similares, pero tener visualizaciones muy diferentes, enfatizando la importancia de la exploración visual de los datos
+El Datasaurus refuerza la lección del Cuarteto de Anscombe: las estadísticas descriptivas, como la media o la correlación, no cuentan toda la historia. Visualizar los datos es crucial para identificar patrones, tendencias o anomalías que no son evidentes en los números.
