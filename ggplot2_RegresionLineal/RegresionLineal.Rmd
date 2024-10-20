@@ -1,0 +1,40 @@
+---
+title: "RegresionLineal"
+author: "Jorge Sayago"
+date: "2024-10-19"
+output: html_document
+---
+
+vamos a realizar la regresion lineal del dataset DataSaurus en especifico del conjunto slant_down
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cargamos las librerias
+
+```{r}
+library("tidyverse")
+library(datasauRus)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+# Filtrar el conjunto de datos "slant_down"
+slant_down_data <- datasaurus_dozen %>% filter(dataset == "slant_down")
+
+# Aplicar la regresión lineal
+modelo_regresion <- lm(y ~ x, data = slant_down_data)
+
+# Resumen del modelo de regresión
+summary(modelo_regresion)
+```
+
+```{r}
+# Visualizar la regresión lineal en el gráfico
+ggplot(slant_down_data, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, colour = "red") + # Línea de regresión
+  theme_minimal()
+```
